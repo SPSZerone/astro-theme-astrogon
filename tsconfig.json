@@ -19,6 +19,7 @@
       "@lib/*": ["src/lib/*"],
       "@shortcodes/*": ["src/components/common/shortcodes/*"],
       "@types/*": ["src/types/*"],
+      "@sps/*": ["./src/sps/*"],
       "@/*": ["./src/*"]
     }
   },
