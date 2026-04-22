@@ -1,5 +1,8 @@
 ---
-import HeroHome from '@spscommon/components/hero/Home.astro';
+
+import Hero from '@spscommon/pages/home/Hero.astro';
+import Currently from '@spscommon/pages/home/Currently.astro';
+import Skills from '@spscommon/pages/home/Skills.astro';
 
 import BaseLayout from "@components/base/BaseLayout.astro";
 import { markdownify } from "@lib/textConverter";
@@ -20,7 +23,16 @@ const { image, imageAlt, title, content, button } = entry.data;
   <section class="section">
     <div class="container">
       <div class="row justify-center">
+
+        <Hero />
+
+        <div class="glass rounded-lg text-center p-8 md:col-10 lg:col-7 intersect:animate-fadeUp opacity-0 intersect-no-queue">
+          <Currently />
+          <Skills />
+        </div>
+
         <div class="text-center lg:col-6">
+          <!--
           {
             image && (
               <div class="blur-[0px]">
@@ -37,9 +49,6 @@ const { image, imageAlt, title, content, button } = entry.data;
             )
           }
           <h1 set:html={markdownify(title)} class="mb-4" />
-
-          <HeroHome />
-          <!--
           <p set:html={markdownify(content)} class="mb-8" />
           -->
           {
