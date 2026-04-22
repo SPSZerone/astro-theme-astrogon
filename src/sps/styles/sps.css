@@ -4,14 +4,14 @@
   --sps-hero-twe-line-height:          1.6;
   --sps-hero-twe-arrow-color:          #00AAAA;
   --sps-hero-twe-text-color:           #000000;
-  --sps-hero-twe-text-highlight-color: #B026FF;
+  --sps-hero-twe-text-highlight-color: #6A0DAD;
 
   --sps-hero-description-font-size:    clamp(1rem, 1.5vw, 1.125rem);
   --sps-hero-description-color-text:   #000000;
 }
 
 html.dark {
-  --sps-hero-twe-arrow-color:          #00AAAA;
+  --sps-hero-twe-arrow-color:          #00FFFF;
   --sps-hero-twe-text-color:           #FFFFFF;
   --sps-hero-twe-text-highlight-color: #B026FF;
 
