@@ -19,9 +19,9 @@
       "@lib/*": ["src/lib/*"],
       "@shortcodes/*": ["src/components/common/shortcodes/*"],
       "@types/*": ["src/types/*"],
-      "@spscommon/*": ["./src/sps/common/*"],
-      "@spstheme/*": ["./src/sps/themes/astrogon/*"],
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@spscommon/*": ["./sps/common/*"],
+      "@spstheme/*": ["./sps/themes/astrogon/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx", "**/*.astro"],
