@@ -3,7 +3,7 @@
 description: this is meta description
 # image: "@assets/profile/jane-doe.jpg"
 
-title: About Me <br/> 关于我
+title: About Me | 关于我
 image: "@assets/profile/avatar.png"
 
 draft: false
