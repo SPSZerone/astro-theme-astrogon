@@ -20,8 +20,8 @@
       "@shortcodes/*": ["src/components/common/shortcodes/*"],
       "@types/*": ["src/types/*"],
       "@/*": ["./src/*"],
-      "@spscommon/*": ["./sps/common/*"],
-      "@spstheme/*": ["./sps/themes/astrogon/*"]
+      "@spscommon/*": ["./sps/src/common/*"],
+      "@spstheme/*": ["./sps/src/themes/astrogon/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx", "**/*.astro"],
