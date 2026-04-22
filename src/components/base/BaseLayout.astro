@@ -1,8 +1,10 @@
 ---
-import '@/sps/styles/sps.css';
+import "@spstheme/styles/sps.css";
 import { plainify } from "@lib/textConverter";
-import Footer from "@components/base/Footer.astro";
-import Header from "@components/base/Header.astro";
+// import Footer from "@components/base/Footer.astro";
+// import Header from "@components/base/Header.astro";
+import Footer from "@spstheme/components/base/Footer.astro";
+import Header from "@spstheme/components/base/Header.astro";
 import ObserverScript from "@components/base/ObserverScript.astro";
 import "@/styles/main.scss";
 import { ClientRouter } from "astro:transitions";
@@ -21,13 +23,15 @@ export interface Props {
 const { title, description, image, noindex, canonical } = Astro.props;
 
 // const siteTitle = "Astrogon";
-const siteDescription = "Astrogon is a simple and elegant Astro theme.";
-const siteImage = "@assets/og-image.png";
+// const siteDescription = "Astrogon is a simple and elegant Astro theme.";
+// const siteImage = "@assets/og-image.png";
 // const siteAuthor = "Jane Doe";
 // const baseUrl = "https://janedoe.com";
 
 // SPS CUSTOM
 const siteTitle = "Astrogon - William Chen - 陈威 - SPS";
+const siteDescription = "My personal websize";
+const siteImage = "@assets/profile/avatar.png"
 const siteAuthor = "William Chen - 陈威";
 const baseUrl = "https://astrogon.me.seapianosnow.com";
 ---

@@ -19,7 +19,8 @@
       "@lib/*": ["src/lib/*"],
       "@shortcodes/*": ["src/components/common/shortcodes/*"],
       "@types/*": ["src/types/*"],
-      "@sps/*": ["./src/sps/*"],
+      "@spscommon/*": ["./src/sps/common/*"],
+      "@spstheme/*": ["./src/sps/themes/astrogon/*"],
       "@/*": ["./src/*"]
     }
   },
