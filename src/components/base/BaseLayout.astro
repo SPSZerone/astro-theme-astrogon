@@ -35,7 +35,7 @@ const siteDescription = "My personal websize";
 const siteImage = "@assets/profile/avatar.png"
 const siteAuthor = "William Chen - 陈威";
 const baseUrl = "https://astrogon.me.seapianosnow.com";
-import AudioInit from '@spscommon/scripts/audio/Init.astro';
+import Audio from '@spscommon/scripts/audio/Audio.astro';
 ---
 
 <!DOCTYPE html>
@@ -157,9 +157,9 @@ import AudioInit from '@spscommon/scripts/audio/Init.astro';
     <Header />
     <main id="main-content" class="flex-1">
       <slot/>
-      <AudioInit />
     </main>
     <Footer />
+    <Audio />
     <!-- <ObserverScript /> -->
   </body>
 </html>
