@@ -21,7 +21,7 @@
       "@types/*": ["src/types/*"],
       "@/*": ["./src/*"],
       "@spscommon/*": ["./sps/common/src/*"],
-      "@spslocal/*": ["./sps/local/src/*"]
+      "@spscustom/*": ["./sps/custom/src/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx", "**/*.astro"],
