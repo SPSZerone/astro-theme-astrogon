@@ -13,7 +13,7 @@ export const site = {
   navigations: [
     {
       path: 'portfolio',
-      label: 'View portfolios <br/> 我的作品',
+      label: 'View Portfolios <br/> 我的作品',
     },
     {
       path: 'blog',
