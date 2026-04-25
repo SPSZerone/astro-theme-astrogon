@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      THEME: "darkness"
+      THEME: "astrogon"
       SPS_DG_PATH: "./sps-digital-garden"
 
     steps:
