@@ -34,6 +34,8 @@ projects:
     technologies:
       - "go"
       - "golang"
+      - "Library"
+      - "Gio UI"
     github: "https://github.com/SPSZerone/sps-go-zerone"
     content:
       - "A golang library."
