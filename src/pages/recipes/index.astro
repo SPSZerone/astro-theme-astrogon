@@ -1,4 +1,7 @@
 ---
+import EntryLayout from "@components/not-found/EntryLayout.astro";
+
+/*
 import CollectionLayout from "@components/recipes/CollectionLayout.astro";
 import { getIndex, getEntries } from "@lib/contentParser";
 import { sortByDate } from "@lib/sortFunctions";
@@ -15,11 +18,16 @@ const pageCount = Math.ceil(entries.length / entriesPerPage);
 const indexOfLastEntry = currentPageIndex * entriesPerPage;
 const indexOfFirstEntry = indexOfLastEntry - entriesPerPage;
 const currentEntries = entries.slice(indexOfFirstEntry, indexOfLastEntry);
+*/
 ---
 
+<!--
 <CollectionLayout
   entryIndex={entryIndex}
   entries={currentEntries}
   pageIndex={currentPageIndex}
   pageCount={pageCount}
 />
+-->
+
+<EntryLayout />

@@ -1,14 +1,20 @@
 ---
+import EntryLayout from "@components/not-found/EntryLayout.astro";
+
+/*
 import type { AuthorsEntry } from "@/types";
-// import CollectionLayout from "@components/authors/CollectionLayout.astro";
+import CollectionLayout from "@components/authors/CollectionLayout.astro";
 import { getEntries } from "@lib/contentParser";
 import { getIndex } from "@lib/contentParser";
 import { sortByTitle } from "@lib/sortFunctions";
 
-// const authorIndex = await getIndex("authors") as AuthorsEntry;
-// const entries = await getEntries("authors", sortByTitle) as AuthorsEntry[];
+const authorIndex = await getIndex("authors") as AuthorsEntry;
+const entries = await getEntries("authors", sortByTitle) as AuthorsEntry[];
+*/
 ---
 
 <!--
 <CollectionLayout authorIndex={authorIndex} entries={entries} />
 -->
+
+<EntryLayout />
