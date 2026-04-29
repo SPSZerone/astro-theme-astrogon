@@ -49,7 +49,8 @@ if (pageIDs) {
         {prevPage ? (
           <a
             href={prevPage}
-            class="col rounded px-2 py-1.5 text-txt-p dark:text-darkmode-txt-p"
+            class="col rounded px-2 py-1.5 text-txt-p dark:text-darkmode-txt-p
+                tiks-success tiks-hover"
             aria-label="Previous"
           >
             <FaArrowLeft className="inline-block" />
@@ -87,7 +88,8 @@ if (pageIDs) {
                     : `${collection ? "/" + collection : ""}/page/${pagination}`
                 }
                 aria-current="page"
-                class="col rounded px-4 py-2 font-semibold text-txt-p dark:text-darkmode-txt-p"
+                class="col rounded px-4 py-2 font-semibold text-txt-p dark:text-darkmode-txt-p
+                    tiks-success tiks-hover"
               >
                 {pagination}
               </a>
@@ -99,7 +101,8 @@ if (pageIDs) {
         {nextPage ? (
           <a
             href={nextPage}
-            class="col rounded px-2 py-1.5 text-txt-p dark:text-darkmode-txt-p"
+            class="col rounded px-2 py-1.5 text-txt-p dark:text-darkmode-txt-p
+                tiks-success tiks-hover"
             aria-label="Next"
           >
             <FaArrowRight className="inline-block" />

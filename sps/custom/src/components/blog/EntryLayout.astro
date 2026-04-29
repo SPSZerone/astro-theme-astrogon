@@ -3,7 +3,7 @@ import License from '@spscommon/components/licenses/Blog.astro';
 import { formatDate } from "@lib/formatDate";
 
 import BaseLayout from "@components/base/BaseLayout.astro";
-import BlogCard from "@components/blog/Card.astro";
+import BlogCard from "@spscustom/components/blog/Card.astro";
 import Share from "@spscustom/components/common/Share.astro";
 import { plainify } from "@lib/textConverter";
 import type { BlogEntry } from "@/types";
@@ -56,7 +56,7 @@ const entryDescription =
         <section class="content mb-4 glass px-4 rounded-lg">
           <Content />
         </section>
-        <section class="content mb-4 glass px-4 rounded-lg">
+        <section class="content mb-4 glass px-0 rounded-lg">
           <License
             title={title}
             description={description || ''}
