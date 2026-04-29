@@ -12,11 +12,13 @@ import cloudflare from "@astrojs/cloudflare";
 
 import icon from "astro-icon";
 
+const isDev = process.env.NODE_ENV === 'development';
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://janedoe.com",
   base: "/",
-  trailingSlash: "ignore",
+  trailingSlash: isDev ? 'ignore' : 'always',
   prefetch: {
     prefetchAll: true
   },
