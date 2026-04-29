@@ -10,6 +10,8 @@ import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
 import cloudflare from "@astrojs/cloudflare";
 
+import icon from "astro-icon";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://janedoe.com",
@@ -25,7 +27,7 @@ export default defineConfig({
     }
   }), AutoImport({
     imports: ["@components/common/Button.astro", "@shortcodes/Accordion", "@shortcodes/Notice", "@shortcodes/Youtube", "@shortcodes/Tabs", "@shortcodes/Tab"]
-  }), mdx()],
+  }), mdx(), icon()],
   markdown: {
     remarkPlugins: [remarkToc, [remarkCollapse, {
       test: "Table of contents"
@@ -35,8 +37,13 @@ export default defineConfig({
       themes: { // https://shiki.style/themes
         light: "light-plus",
         dark: "dark-plus",
-      } 
+      }
     },
     extendDefaultPlugins: true
+  },
+  vite: {
+    resolve: {
+      preserveSymlinks: true,
+    },
   },
 });

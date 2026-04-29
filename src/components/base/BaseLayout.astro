@@ -37,7 +37,7 @@ const siteImage = "@assets/profile/avatar.png"
 const siteAuthor = "William Chen - 陈威";
 const baseUrl = "https://astrogon.me.seapianosnow.com";
 import Audio from '@spscommon/scripts/audio/Audio.astro';
-import Effect from '@spscommon/components/effects/3DQuantumNeuralNetwork.astro'
+import Effect3DQNN from '@spscommon/components/effects/3DQuantumNeuralNetwork.astro'
 import Totoro from '@spscommon/components/widgets/Totoro.astro';
 ---
 
@@ -157,7 +157,7 @@ import Totoro from '@spscommon/components/widgets/Totoro.astro';
   </head>
   <body>
     <Background />
-    <Effect lightRange={[1, 2]} darkRange={[0, 0]} formationRange={[0, 2]} />
+    <Effect3DQNN lightRange={[1, 2]} darkRange={[0, 0]} formationRange={[0, 2]} />
     <Header />
     <main id="main-content" class="flex-1">
       <slot/>

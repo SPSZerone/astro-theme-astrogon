@@ -16,6 +16,19 @@
   --sps-skill-category-bg-color:                           #EEEEEE; /* EEEEEE 1E293B */
   --sps-skill-category-title-color:                        #000000; /* 000000 FFFFFF */
   --sps-skill-tag-name-color:                              #111111; /* 111111 F1F5F9 */
+
+  --sps-blog-info-bg: #ffffff; /* 使用纯白卡片，或者 #f4fbfb 使其稍微透出青色感 */
+  --sps-blog-info-border: rgba(0, 0, 0, 0.06);
+  --sps-blog-info-shadow: rgba(0, 0, 0, 0.05);
+
+  --sps-blog-info-title-color: #0f172a; /* 深岩灰 */
+  --sps-blog-info-url-color: #0284c7;   /* 清晰的深蓝色 */
+  --sps-blog-info-desc-color: #475569;  /* 中性灰 */
+
+  --sps-blog-info-label-color: #64748b; /* 浅岩灰 */
+  --sps-blog-info-value-color: #1e293b; /* 正文深色 */
+
+  --sps-blog-info-watermark-color: rgba(0, 0, 0, 0.03); /* 淡黑色水印 */
 }
 
 html.dark {
@@ -36,4 +49,17 @@ html.dark {
   --sps-skill-category-bg-color:                           #1E293B; /* EEEEEE 1E293B */
   --sps-skill-category-title-color:                        #FFFFFF; /* 000000 FFFFFF */
   --sps-skill-tag-name-color:                              #F1F5F9; /* 111111 F1F5F9 */
+
+  --sps-blog-info-bg: #1e2532;
+  --sps-blog-info-border: rgba(255, 255, 255, 0.05);
+  --sps-blog-info-shadow: rgba(0, 0, 0, 0.2);
+
+  --sps-blog-info-title-color: #f8fafc;
+  --sps-blog-info-url-color: #7dd3fc;
+  --sps-blog-info-desc-color: #cbd5e1;
+
+  --sps-blog-info-label-color: #94a3b8;
+  --sps-blog-info-value-color: #e2e8f0;
+
+  --sps-blog-info-watermark-color: rgba(255, 255, 255, 0.03);
 }
