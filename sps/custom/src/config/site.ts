@@ -7,6 +7,12 @@ export type Navigation = {
 export const site = {
   theme: 'astrogon',
 
+  title: "Astrogon - William Chen - 陈威 - SPS",
+  description: "My personal websize",
+  image: "@assets/profile/avatar.png",
+  author: "William Chen - 陈威",
+  baseUrl: "https://astrogon.me.seapianosnow.com",
+
   navEnable: true,
   homeSiteEnable: true,
 

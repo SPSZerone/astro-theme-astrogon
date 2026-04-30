@@ -1,4 +1,6 @@
 ---
+import { site as customSite } from '@spscustom/config/site';
+
 import HeroAbout from '@spscommon/components/hero/About.astro';
 
 import BaseLayout from "@components/base/BaseLayout.astro";
@@ -16,7 +18,7 @@ const { title, description, image, imageAlt } = entry.data;
 const { Content } = await render(entry);
 ---
 
-<BaseLayout title={title} description={description} image={image?.src}>
+<BaseLayout title=`${title} - ${customSite.title}` description={description} image={image?.src}>
   <section class="section-sm">
     <div class="container">
       <div class="row justify-center">
@@ -33,7 +35,7 @@ const { Content } = await render(entry);
               />
             )
           }
-          <h2 set:html={markdownify(title)} class="h3 mb-6" />
+          <h2 set:html=`${markdownify(title)} Me` class="h3 mb-6" />
           <!--
           <Content />
           -->

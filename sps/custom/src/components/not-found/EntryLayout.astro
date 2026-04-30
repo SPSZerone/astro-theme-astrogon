@@ -1,11 +1,12 @@
 ---
+import { site as customSite } from '@spscustom/config/site';
 import { Icon } from "astro-icon/components";
 
 import BaseLayout from "@components/base/BaseLayout.astro";
 import Button from "@components/common/Button.astro";
 ---
 
-<BaseLayout title="Page Not Found">
+<BaseLayout title=`404 - ${customSite.title}`>
   <section class="section-sm text-center">
     <div class="container">
       <div class="row justify-center">
@@ -14,7 +15,7 @@ import Button from "@components/common/Button.astro";
             404
           </h1>
 
-          <h1 class="h2 mb-4">Page not found</h1>
+          <h1 class="h2 mb-4">Page Not found</h1>
           <p class="mb-8">
             Sorry, the page you visited does not exist or has been moved.
           </p>
