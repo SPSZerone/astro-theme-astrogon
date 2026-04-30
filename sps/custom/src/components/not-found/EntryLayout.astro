@@ -1,4 +1,6 @@
 ---
+import { Icon } from "astro-icon/components";
+
 import BaseLayout from "@components/base/BaseLayout.astro";
 import Button from "@components/common/Button.astro";
 ---
@@ -8,16 +10,19 @@ import Button from "@components/common/Button.astro";
     <div class="container">
       <div class="row justify-center">
         <div class="glass rounded-lg p-4 sm:col-10 md:col-8 lg:col-6 intersect:animate-fadeUp opacity-0">
-          <h1
-            class="text-[8rem] block"
-          >
+          <h1 class="text-[8rem] block">
             404
-            </span>
-            <h1 class="h2 mb-4">Page not found</h1>
-            <p class="mb-8">
-              Sorry, the page you visited does not exist or has been moved.
-            </p>
-            <Button link="/" label="Back to Home" hoverInvert/>
+          </h1>
+
+          <h1 class="h2 mb-4">Page not found</h1>
+          <p class="mb-8">
+            Sorry, the page you visited does not exist or has been moved.
+          </p>
+
+          <div class="flex justify-center items-center">
+            <Icon name="material-symbols:home" class="text-xl mr-4" />
+            <Button link="/" label="Back to Home" hoverInvert />
+          </div>
         </div>
       </div>
     </div>
