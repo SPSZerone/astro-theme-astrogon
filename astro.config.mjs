@@ -19,6 +19,9 @@ export default defineConfig({
   site: "https://janedoe.com",
   base: "/",
   trailingSlash: isDev ? 'ignore' : 'always',
+  devToolbar: {
+    enabled: false
+  },
   prefetch: {
     prefetchAll: true
   },
